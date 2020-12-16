@@ -1,10 +1,9 @@
-require 'sinatra'
+require 'sinatra/base'
 
-
-require 'sinatra'
-
-class HelloWorldApp < Sinatra::Base
+class BookmarkManager < Sinatra::Base
   get '/' do
-    "Hello, world!"
+    'Hello World'
   end
+
+  run! if app_file == $0
 end

@@ -1,2 +1,4 @@
-require './lib/app'
-run HelloWorldApp
+require_relative "./lib/app"
+require 'rack'
+
+run BookmarkManager
