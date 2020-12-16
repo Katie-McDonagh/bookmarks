@@ -1,4 +1,7 @@
 # at the top of spec/spec_helper.rb
+require 'simplecov'
+SimpleCov.start
+SimpleCov.formatter = SimpleCov::Formatter::Console
 
 # Set the environment to "test"
 ENV['RACK_ENV'] = 'test'
