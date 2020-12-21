@@ -9,8 +9,7 @@ class Bookmarks
         array.push(row.values_at('url'))
       end
     end
-
-    return array
+     array
   end
 
 end
