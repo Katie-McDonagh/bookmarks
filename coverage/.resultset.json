@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/student/post-course-projects/bookmarks/lib/app.rb": {
+      "/Users/katiemcdonagh/w4_r/bookmarks/lib/app.rb": {
         "lines": [
           1,
           null,
@@ -10,6 +10,8 @@
           1,
           null,
           null,
+          1,
+          1,
           1,
           1,
           null,
@@ -18,7 +20,7 @@
           null
         ]
       },
-      "/Users/student/post-course-projects/bookmarks/spec/features/index_spec.rb": {
+      "/Users/katiemcdonagh/w4_r/bookmarks/spec/features/index_spec.rb": {
         "lines": [
           1,
           1,
@@ -28,17 +30,46 @@
           null
         ]
       },
-      "/Users/student/post-course-projects/bookmarks/spec/features/viewing_bookmarks_spec.rb": {
+      "/Users/katiemcdonagh/w4_r/bookmarks/spec/features/viewing_bookmarks_spec.rb": {
         "lines": [
           1,
           1,
           1,
           1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/katiemcdonagh/w4_r/bookmarks/spec/view_bookmarks_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/katiemcdonagh/w4_r/bookmarks/models/bookmarks.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1608126667
+    "timestamp": 1608552788
   }
 }
