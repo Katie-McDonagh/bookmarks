@@ -51,6 +51,7 @@ RSpec.configure do |config|
   config.before(:each) do
     require 'setup_test_database'
     clear_table
+    add_to_table
   end
 
   # rspec-mocks config goes here. You can use an alternate test double
