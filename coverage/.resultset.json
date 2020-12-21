@@ -4,11 +4,7 @@
       "/Users/katiemcdonagh/w4_r/bookmarks/lib/app.rb": {
         "lines": [
           1,
-          null,
           1,
-          1,
-          1,
-          null,
           null,
           1,
           1,
@@ -16,6 +12,22 @@
           null,
           null,
           1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/katiemcdonagh/w4_r/bookmarks/models/bookmarks.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
           null
         ]
       },
@@ -52,19 +64,8 @@
           null,
           null
         ]
-      },
-      "/Users/katiemcdonagh/w4_r/bookmarks/models/bookmarks.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          2,
-          null,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1608553108
+    "timestamp": 1608553429
   }
 }
