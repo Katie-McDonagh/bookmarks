@@ -23,8 +23,18 @@
       "/Users/katiemcdonagh/w4_r/bookmarks/models/bookmarks.rb": {
         "lines": [
           1,
+          1,
           null,
           1,
+          2,
+          null,
+          2,
+          2,
+          2,
+          10,
+          null,
+          null,
+          null,
           2,
           null,
           null,
@@ -47,7 +57,7 @@
           1,
           1,
           1,
-          1,
+          0,
           null,
           null
         ]
@@ -66,6 +76,6 @@
         ]
       }
     },
-    "timestamp": 1608553429
+    "timestamp": 1608562571
   }
 }
