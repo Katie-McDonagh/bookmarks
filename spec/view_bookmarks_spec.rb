@@ -13,7 +13,7 @@ describe Bookmarks do
 
   it 'adds a new bookmark into the database' do
 
-    Bookmarks.create("www.asda.com")
-    expect(Bookmarks.all).to include("www.asda.com")
+    Bookmarks.create("Asda", "www.asda.com")
+    expect(Bookmarks.all).to include("Asda")
   end
 end
