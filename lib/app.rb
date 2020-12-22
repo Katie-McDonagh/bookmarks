@@ -18,7 +18,7 @@ class BookmarkManager < Sinatra::Base
 
   post '/add' do
     @url = params["url"]
-    p @url
+    Bookmarks.create(@url)
   end
 
   run! if app_file == $0

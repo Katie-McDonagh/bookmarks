@@ -17,6 +17,6 @@ class Bookmarks
     else
     conn = PG.connect( dbname: 'bookmark_manager' )
     end
-    rs = conn.exec( "INSERT INTO bookmarks (url) VALUES ('#{params}');")
+    conn.exec( "INSERT INTO bookmarks (url) VALUES ('#{params}');")
   end
 end
