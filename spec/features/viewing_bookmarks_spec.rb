@@ -10,4 +10,11 @@ feature 'users can view a list of bookmarks' do
     expect(page).to have_content 'New Yorker'
     expect(page).to have_content 'Twitter'
   end
+
+  scenario 'user can click on a link to visit the bookmark url' do
+    Bookmark.create('Nat Geo', 'www.nationalgeographic.com')
+    visit('/bookmarks')
+    expect(page).to have_content 'Nat Geo'
+    
+  end
 end
