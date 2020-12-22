@@ -11,6 +11,12 @@ class BookmarkManager < Sinatra::Base
     erb :bookmarks
   end
 
+  delete '/delete' do
+    p params
+    # send these params to the model, find with the title (id)
+    #call the delete methood with the params as an argument.
+  end
+
   get '/add' do
     erb :add_bookmarks
   end

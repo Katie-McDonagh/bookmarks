@@ -5,7 +5,13 @@
     <body>
         <h1>Hello World</h1>
         <% @list.each do |bookmark| %>
-            <a href=<%= bookmark.url %>><%=bookmark.title %></a>
+           <ul> 
+           <a href=<%= bookmark.url %>><%=bookmark.title %></a>
+           <form action="/delete" method="delete">
+           <input type="hidden" name="title" value=<%= bookmark.title %>>
+           <button type="submit">Delete</button>
+        </form>
+           </ul>
         <% end %>
     </body>
 </html>
