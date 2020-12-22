@@ -12,7 +12,14 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/add' do
+    # Bookmarks.create(params)
     erb :add_bookmarks
+  end
+
+  post '/add' do
+    @url = params["url"]
+    "hello"
+    p @url
   end
 
   run! if app_file == $0
