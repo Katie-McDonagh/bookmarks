@@ -1,5 +1,13 @@
 require 'pg'
-class Bookmarks 
+class Bookmarks
+
+  attr_reader :id, :title, :url
+  
+  def initialize(id, title, url)
+    @id = id,
+    @title = title,
+    @url = url
+  end
 
   def self.all
     if ENV['RACK_ENV'] == 'test'
@@ -8,7 +16,9 @@ class Bookmarks
     conn = PG.connect( dbname: 'bookmark_manager' )
     end
     rs = conn.exec( "SELECT * FROM bookmarks" )
-    rs.map { |row| row['title'] }
+    rs.map do |row| 
+        Bookmarks.new(row["id"], row['title'], row['url'])
+    end
   end
 
   def self.create(title, url)

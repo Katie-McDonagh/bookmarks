@@ -7,13 +7,7 @@ describe Bookmarks do
 
     Bookmarks.create("New Yorker", "www.newyorker.com")
     Bookmarks.create("Twitter", "www.twitter.com")
-    expect(Bookmarks.all).to include("New Yorker")
-    expect(Bookmarks.all).to include("Twitter")
-  end
-
-  it 'adds a new bookmark into the database' do
-
-    Bookmarks.create("Asda", "www.asda.com")
-    expect(Bookmarks.all).to include("Asda")
+    expect(Bookmarks.all[0].title).to eq("New Yorker")
+    expect(Bookmarks.all[1].url).to eq("www.twitter.com")
   end
 end

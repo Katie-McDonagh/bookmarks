@@ -4,6 +4,8 @@
     </head>
     <body>
         <h1>Hello World</h1>
-        <%= @list %>
+        <% @list.each do |bookmark| %>
+            <a href=<%= bookmark.url %>><%=bookmark.title %></a>
+        <% end %>
     </body>
 </html>
