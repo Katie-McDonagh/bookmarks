@@ -12,7 +12,6 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/add' do
-    # Bookmarks.create(params)
     erb :add_bookmarks
   end
 
