@@ -18,7 +18,6 @@ class BookmarkManager < Sinatra::Base
 
   post '/add' do
     @url = params["url"]
-    "hello"
     p @url
   end
 

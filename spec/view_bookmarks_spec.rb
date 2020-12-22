@@ -12,4 +12,9 @@ describe Bookmarks do
     expect(Bookmarks.all).to include("www.twitter.com")
   end
 
+  it 'adds a new bookmark into the database' do
+
+    Bookmarks.create("www.asda.com")
+    expect(Bookmarks.all).to include("www.asda.com")
+  end
 end
