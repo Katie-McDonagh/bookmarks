@@ -12,9 +12,9 @@ feature 'users can view a list of bookmarks' do
   end
 
   scenario 'user can click on a link to visit the bookmark url' do
-    Bookmark.create('Nat Geo', 'www.nationalgeographic.com')
+    Bookmarks.create('Nat Geo', 'www.nationalgeographic.com')
     visit('/bookmarks')
-    expect(page).to have_content 'Nat Geo'
+    expect(page).to have_link('Nat Geo', href: 'www.nationalgeographic.com')
     
   end
 end
