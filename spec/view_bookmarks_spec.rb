@@ -13,8 +13,9 @@ describe Bookmarks do
 
   it 'deletes a bookmark' do
 
-    Bookmarks.create(1, "New Yorker", "www.newyorker.com")
-    Bookmarks.delete(1)
+    Bookmarks.create("New Yorker", "www.newyorker.com")
+    id = Bookmarks.all[0].id[0]
+    Bookmarks.delete(id)
     expect(Bookmarks.all.length).to eq(0)
   end
 end

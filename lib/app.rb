@@ -12,9 +12,8 @@ class BookmarkManager < Sinatra::Base
   end
 
   delete 'bookmarks/:id' do
-    p params
-    # send these params to the model, find with the title (id)
-    #call the delete method with the params as an argument.
+    Bookmarks.delete(params[:id])
+    redirect '/bookmarks'
   end
 
   get '/add' do
@@ -23,6 +22,7 @@ class BookmarkManager < Sinatra::Base
 
   post '/add' do
     Bookmarks.create(params["title"], params["url"])
+    redirect '/bookmarks'
   end
 
   run! if app_file == $0
