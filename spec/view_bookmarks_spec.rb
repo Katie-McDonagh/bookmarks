@@ -10,4 +10,11 @@ describe Bookmarks do
     expect(Bookmarks.all[0].title).to eq("New Yorker")
     expect(Bookmarks.all[1].url).to eq("www.twitter.com")
   end
+
+  it 'deletes a bookmark' do
+
+    Bookmarks.create(1, "New Yorker", "www.newyorker.com")
+    Bookmarks.delete(1)
+    expect(Bookmarks.all.length).to eq(0)
+  end
 end

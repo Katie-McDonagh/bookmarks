@@ -18,6 +18,7 @@ class Bookmarks
     rs = conn.exec( "SELECT * FROM bookmarks" )
     rs.map do |row| 
         Bookmarks.new(row["id"], row['title'], row['url'])
+        #p row['id']
     end
   end
 
@@ -28,5 +29,14 @@ class Bookmarks
     conn = PG.connect( dbname: 'bookmark_manager' )
     end
     conn.exec( "INSERT INTO bookmarks (url, title) VALUES ('#{url}', '#{title}');")
+  end
+
+  def self.delete(id)
+    if ENV['RACK_ENV'] == 'test'
+      conn = PG.connect(dbname: 'bookmark_manager_test')
+    else
+    conn = PG.connect( dbname: 'bookmark_manager' )
+    end
+    conn.exec( "DELETE FROM bookmarks WHERE id = '#{id}';")
   end
 end
